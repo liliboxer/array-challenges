@@ -10,7 +10,7 @@ describe('array', () => {
   it('multiples of 10', () => {
     const n = 15;
     const result = multiplesOfN(n);
-    expect(result).toEqual([15, 30, 45, 60, 75, 90]);
+    expect(result).toEqual([0, 15, 30, 45, 60, 75, 90]);
   });
 })
 ;
