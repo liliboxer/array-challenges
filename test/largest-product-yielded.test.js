@@ -1,15 +1,20 @@
 const { largestProductYielded } = require('../lib/largest-product-yielded');
 
 describe('largest product yielded', () => {
-  it('sorts array', () => {
-    const arr = [-10, 7, 29, 30, 5, -10, -70];
-    const sort = largestProductYielded(arr);
-    expect(sort).toEqual([-70, -10, -10, 5, 7, 29, 30]);
+  // it('sorts array', () => {
+  //   const arr = [-10, 7, 29, 30, 5, -10, -70];
+  //   const sort = largestProductYielded(arr);
+  //   expect(sort).toEqual([-70, -10, -10, 5, 7, 29, 30]);
+  // });
+  it('returns 880', () => {
+    const arr = [-70, -10, 11, 8, 10];
+    const sum = largestProductYielded(arr);
+    expect(sum).toEqual(880);
   });
-  it('grab 3 highest numbers', () => {
-    const arr = [-70, -10, -10, 5, 7, 29, 30];
-    const highest = largestProductYielded(arr);
-    expect(highest).toEqual([]);
+  it('returns 165', () => {
+    const arr = [-3, -9, 69, 18];
+    const sum = largestProductYielded(arr);
+    expect(sum).toEqual(165);
   });
 
 });
