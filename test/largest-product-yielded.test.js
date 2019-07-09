@@ -6,15 +6,15 @@ describe('largest product yielded', () => {
   //   const sort = largestProductYielded(arr);
   //   expect(sort).toEqual([-70, -10, -10, 5, 7, 29, 30]);
   // });
-  it('returns 880', () => {
-    const arr = [-70, -10, 11, 8, 10];
+  it('2 negative numbers,', () => {
+    const arr = [-10, 20, 5, -7, 9];
     const sum = largestProductYielded(arr);
-    expect(sum).toEqual(880);
+    expect(sum).toEqual(1400);
   });
-  it('returns 165', () => {
-    const arr = [-3, -9, 69, 18];
+  it('1 negative number', () => {
+    const arr = [10, 7, 29, 5, 10, -70];
     const sum = largestProductYielded(arr);
-    expect(sum).toEqual(165);
+    expect(sum).toEqual(2900);
   });
 
 });
